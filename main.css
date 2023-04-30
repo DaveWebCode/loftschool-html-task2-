@@ -17,8 +17,8 @@ a {
 
 .header {
     position: relative;
-    height: 120px;
-    margin-bottom: 150px;
+    height: 118px;
+    margin-bottom: 112px;
 }
 
 .logo {
@@ -42,6 +42,13 @@ h1 h2 h3 h4 h5 h6 {
     font-weight: normal;
 }
 
+span {
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
     width: 1142px;
@@ -49,22 +56,23 @@ h1 h2 h3 h4 h5 h6 {
 
 .menu {
     position: absolute;
-    top: 47px;
-    left: 255px;
-}
-
-.contacts {
-    position: absolute;
-    top: 27px;
-    right: 0;
+    top: 45px;
+    left: 438px;
 }
 
 .menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 54px;
+    margin-right: 51px;
 }
 
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__item .menu__item--active {
+    color:#DA0100;
+}
 .menu__link {
     font-size: 14px;
     text-decoration: none;
@@ -75,47 +83,122 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 .contacts {
+    position: absolute;
+    top: 33px;
+    right: 0;
     font-style: normal;
     text-align: right;
+    line-height: 1.1;
 }
 
 .contacts__phone {
     text-decoration: 0;
     font-size: 26px;
-    margin-bottom: 6px;
 }
 
 .contacts__dropdown-title {
     font-size: 13px;
+    margin-top: 1px;
     text-decoration-line: underline;
     color: #FF3D00;
 }
 
 .hero__text-section {
-    width: 784px;
+    width: 1137px;
+    text-align: center;
 }
 
 .hero__title {
     font-size: 72px;
     font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero__description {
     font-size: 18px;
     margin-bottom: 43.5px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 58px;
 }
 
 .btn {
-    background: #FF3D00;
+    background: #FFFFFF;
     border-radius: 35px;
-    padding: 18 53 18 54;
-    color: #FFFFFF;
+    padding: 18px 53px 18px 54px;
+    color: #FF3D00;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: none;
-    width: 195px;
-    height: 55px;
+    text-decoration:none;
 }
 
+.btn:hover {
+    color: #FFFFFF;
+    background: #FF3D00;
+}
+
+.section {
+    margin-bottom: 180px;
+}
+
+.services__list {
+    margin-top: 233px;
+
+}
+
+.services__header-img {
+    margin-top: 36px;
+    margin-left: 29px;
+
+}
+
+.services__card {
+    min-height: 476px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 22px;
+    width: 362px;
+}
+
+.services__card:last-child {
+    margin-right: 0px;
+}
+
+.services__content {
+    color: #000000;
+    padding: 30px 34px 35px 22px;
+}
+
+.services__content-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 17px;
+}
+
+.content__blok {
+    display: inline-block;
+    vertical-align: top;
+    width: 102px;
+    margin-right: 81px;
+}
+
+.content__blok:last-child {
+    margin-right: 0;
+}
+
+.content__content-option {
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 25px;
+}
+
+.services__content-description {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.services__button {
+    margin-bottom: 30px;
+}
