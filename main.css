@@ -9,6 +9,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #17191C;
     color: #FFFFFF;
+    margin: 0;
 }
 
 a {
@@ -24,7 +25,7 @@ a {
 .logo {
     display: block;
     position: absolute;
-    top: 26px;
+    top: 23px;
     left: 0;
 }
 
@@ -35,9 +36,14 @@ ul {
 
 ul li {
     list-style: none;
+    vertical-align: top;
 }
 
-h1 h2 h3 h4 h5 h6 {
+li:last-child {
+    margin-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
 }
@@ -49,6 +55,7 @@ p {
 span {
     font-weight: bold;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -137,7 +144,6 @@ span {
     font-size: 18px;
     margin-bottom: 43.5px;
     font-weight: 400;
-    margin-top: 4px;
     margin-bottom: 58px;
 }
 
@@ -156,7 +162,7 @@ span {
     background: #FF3D00;
     border: 2px solid #FF3D00;
     border-radius: 35px;
-    padding: 18px 53px 18px 54px;
+    padding: 16px 53px 18px 49px;
     color: #FFFFFF;
     font-weight: 700;
     text-transform: uppercase;
@@ -186,12 +192,11 @@ span {
 }
 
 .section {
-    margin-bottom: 140px;
+    margin-bottom: 143px;
 }
 
-.services__list {
-    margin-top: 250px;
-
+.section-about {
+    margin-bottom: 74px;
 }
 
 .services__card {
@@ -246,7 +251,6 @@ span {
 }
 
 .services__button {
-    margin-bottom: 37px;
 }
 
 .news__item {
@@ -254,11 +258,7 @@ span {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 11px;
-}
-
-.new__item:last-child {
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 .news__image {
@@ -282,7 +282,11 @@ span {
     font-size: 36px;
     line-height: 49px;
     margin-bottom: 50px;
-    margin-top: 179px;
+}
+
+.margin-service {
+    margin-bottom: 179px;
+    margin-top: 254px;
 }
 
 .news__date {
@@ -362,9 +366,9 @@ span {
     vertical-align: top;
     width: 785px;
     background: #FFFFFF;
-    padding: 43px 81px;
+    padding: 67px 81px 83px 81px;
     margin-left: -142px;
-    margin-top: 94px;
+    margin-top: 98px;
 }
 
 .about__title {
@@ -372,7 +376,7 @@ span {
     font-size: 36px;
     line-height: 49px;
     color: #000000;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
 }
 
 .about__desc-text {
@@ -391,13 +395,12 @@ span {
 }
 
 .footer-container__content {
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #2e3033;
 }
 
 .footer {
     height: 142px;
     position: relative;
-    margin-top: -65px;
 }
 
 .socials {
