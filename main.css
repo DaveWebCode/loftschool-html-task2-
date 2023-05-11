@@ -17,16 +17,30 @@ a {
 }
 
 .header {
-    position: relative;
-    height: 118px;
-    margin-bottom: 112px;
+    padding-top: 30px;
+    margin-bottom: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__col {
+    display: flex;
+    align-items: center;
+}
+
+.header__col--align--right {
+    justify-content: flex-end;
+}
+
+.header__col--align--left {
+    justify-content: flex-start;
 }
 
 .logo {
     display: block;
-    position: absolute;
-    top: 23px;
-    left: 0;
+   
+    
 }
 
 ul {
@@ -70,9 +84,8 @@ span {
 }
 
 .menu {
-    position: absolute;
-    top: 45px;
-    left: 438px;
+   
+    
 }
 
 .menu-footer {
@@ -104,9 +117,8 @@ span {
 }
 
 .contacts {
-    position: absolute;
-    top: 33px;
-    right: 0;
+   
+    
     font-style: normal;
     text-align: right;
     line-height: 1.1;
@@ -130,7 +142,7 @@ span {
 }
 
 .hero__text-section {
-    width: 1137px;
+    width: 100%;
     text-align: center;
 }
 
@@ -199,29 +211,37 @@ span {
     margin-bottom: 74px;
 }
 
-.services__card {
+.service {
+
     min-height: 476px;
     background: #FFFFFF;
     border-radius: 5px;
-    display: inline-block;
-    margin-right: 22px;
-    width: 362px;
+    margin-right: 27px;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__card {
+    width: calc(100% / 3 - 18px);
 }
 
 .services__card:last-child {
     margin-right: 0px;
 }
 
-.services__header-img {
+.service__header-img {
     padding: 40px 249px 21px 29px;
 }
 
-.services__content {
+.service__content {
     color: #000000;
     padding: 0px 34px 35px 22px;
 }
 
-.services__content-title {
+.service__content-title {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -229,8 +249,8 @@ span {
 }
 
 .content__blok {
-    vertical-align: top;
-    margin-right: 18px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .content__blok:last-child {
@@ -241,22 +261,17 @@ span {
     font-size: 16px;
     line-height: 125%;
     margin-bottom: 25px;
-    display: inline-block;
-    width: 124px;
 }
 
-.services__content-description {
+.service__content-description {
     font-size: 14px;
     margin-bottom: 56px;
 }
 
-.services__button {
-}
-
 .news__item {
     width: 557px;
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    align-items: flex-end;
     position: relative;
     margin-right: 20px;
 }
@@ -269,10 +284,6 @@ span {
 }
 
 .news__content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 28px 29px;
     min-height: 121px;
 }
