@@ -239,9 +239,9 @@ img {
 }
 
 .socials__item {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 6px;
 }
 
 .socials__item:last-child {
@@ -334,7 +334,7 @@ img {
   color: #303030;
   line-height: 27px;
   font-size: 16px;
-  padding: 95px 0 82px;
+  padding: 95px 0 100px;
 }
 
 .services {
@@ -344,7 +344,12 @@ img {
 .service {
   display: flex;
   min-height: 333px;
+  margin-bottom: 58px;
   /* margin-right: 171px; */
+}
+
+.services__item {
+  margin-bottom: 48px;
 }
 
 .service__img {
@@ -355,7 +360,7 @@ img {
 .service__content {
   flex: 1;
   color: #000000;
-  padding: 11px 2px 79px 22px;
+  padding: 11px 2px 0px 22px;
 }
 
 .service__title {
