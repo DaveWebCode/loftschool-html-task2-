@@ -130,24 +130,48 @@ img {
     font-size: 26px;
 }
 
-.contacts__dropdown-title {
+.dropdown {
+    position: relative;
+}
+
+.dropdown-title {
     font-size: 13px;
     margin-top: 1px;
     text-decoration-line: underline;
     color: #FF3D00;
 }
 
-.contacts__dropdown {
-    position: absolute;
-}
-
-.contacts__dropdown::after {
+.dropdown__menu {
     content: "";
-    /* display: inline-block; */
     position: absolute;
     width: 160px;
     height: 80px;
+    top: 100%;
     background: url("./img/upper.png") no-repeat;
+    /* display: none; */
+}
+
+.dropdown__list {
+    display: inline-block;
+    position: relative;
+    margin-right: 19px;
+    margin-top: 22px;
+    text-align: left;
+}
+
+.dropdown__item {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1E1F20;
+}
+
+.dropdown__item .dropdown__item--hours {
+    font-weight: 600;
+}
+
+.dropdown-title:hover .dropdown__menu {
+    display: block;
 }
 
 .btn {
